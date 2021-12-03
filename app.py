@@ -13,7 +13,7 @@ class_dict = {0: 'Cats', 1: 'Dogs'}
 def predict_label(img_path):
     query = cv2.imread(img_path)
     output = query.copy()
-    query = cv2.resize(query, (224, 224))
+    query = cv2.resize(query, (150, 150))
     q = []
     q.append(query)
     q = np.array(q, dtype='float') / 255.0
